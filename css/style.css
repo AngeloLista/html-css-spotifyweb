@@ -24,3 +24,38 @@ body {
 
 
 /* WebApp */
+#website-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    background-color: gray;
+    flex-basis: 50px;
+}
+
+#content {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header {
+    flex-basis: 100px;
+    background-color: black;
+}
+
+main {
+    flex-grow: 1;
+    background-color: green;
+}
+
+
+
+
+footer {
+    flex-basis: 100px;
+    background-color: yellow;
+}
