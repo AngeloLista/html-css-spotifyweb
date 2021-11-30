@@ -30,12 +30,20 @@ body {
     flex-direction: row;
 }
 
-
+/* Sidebar */
 #sidebar {
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
     background-color: gray;
     flex-basis: 50px;
+    justify-content: space-between;
 }
+
+#sidebar ul li {
+    list-style-type: none;
+}
+
 
 #content {
     background-color: orange;
