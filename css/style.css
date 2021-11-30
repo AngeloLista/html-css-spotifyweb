@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .clearfix {
@@ -27,7 +27,7 @@ body {
     text-decoration: none;
     border: 1px solid white;
     border-radius: 30px;
-    padding: 15apx 50px;
+    padding: 15px 50px;
     font-size: 15px;
     margin-right: 10px;
 }
@@ -86,15 +86,62 @@ header {
     text-align: right;
 }
 
+
+/* Main */
 main {
     flex-grow: 1;
     background-color: #141922;
     overflow: auto;
+    padding: 10px 15px;
+    color: white;
+    
+}
+
+main nav ul {
+    text-align: center;
+}
+
+main nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.highlighted {
+    border-bottom: 3px solid #a9fa2f;
+}
+
+main li a {
+    text-decoration: none;
+    color: #808287;
+    font-weight: 700;
+}
+
+/* Main Content */
+main h1 {
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+.cards {
+    width: 50%;
+}
+
+main img {
+    width: 100%;
 }
 
 
 
 
+
+
+
+
+
+
+
+/* Footer */
 footer {
     flex-shrink: 0;
     flex-basis: 100px;
