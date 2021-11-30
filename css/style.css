@@ -30,7 +30,9 @@ body {
     flex-direction: row;
 }
 
+
 #sidebar {
+    flex-shrink: 0;
     background-color: gray;
     flex-basis: 50px;
 }
@@ -42,6 +44,7 @@ body {
     flex-grow: 1;
 }
 
+/* Content */
 header {
     flex-basis: 100px;
     background-color: black;
@@ -50,12 +53,14 @@ header {
 main {
     flex-grow: 1;
     background-color: green;
+    overflow: auto;
 }
 
 
 
 
 footer {
+    flex-shrink: 0;
     flex-basis: 100px;
     background-color: yellow;
 }
