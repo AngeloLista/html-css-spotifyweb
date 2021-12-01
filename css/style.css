@@ -47,7 +47,7 @@ body {
     padding: 5px 0;
     margin: auto;
     list-style-type: none;
-    width: 65%;
+    width: 32px;
 }
 
 .small-icon {
@@ -219,6 +219,7 @@ footer h2 {
     justify-content: space-around;
     align-items: center;
     width: 225px;
+    margin-bottom: 5px;
 }
 
 /* Song time stamp */
@@ -254,8 +255,31 @@ footer h2 {
     width: 70px;
     position: relative;
     bottom: 1px;
+    margin: 0;
 }
 
 .bar.time {
     width: 150px;
+}
+
+
+@media screen and (min-width: 768px){
+    #sidebar {
+        flex-basis: 150px;
+    }
+
+    #sidebar ul li {
+        text-align: left;
+        width: 50px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    header {
+        width: calc(100% - 150px);
+    }
+
+    .bar.time {
+        width: 250px;
+    }
 }
