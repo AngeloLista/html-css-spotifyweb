@@ -77,6 +77,7 @@ body {
 .icon {
     width: 30px;
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 .icon.gray {
@@ -344,12 +345,22 @@ footer h2 {
         color: #707070;
     }
 
-    #sidebar ul li.download {
-        color: #707070;
+    #sidebar #top-sidebar ul li {
+        margin-bottom: 10px;
     }
 
     .button-description {
         display: inline-block;
+        position: relative;
+        top: 3px;
+        font-weight: 700;
+    }
+
+    .button-description.download {
+        font-size: 13px;
+        font-weight: 700;
+        position: relative;
+        top: 0;
     }
 
     header {
