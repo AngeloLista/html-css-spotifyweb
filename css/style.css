@@ -73,15 +73,7 @@ body {
 
 
 /* Content */
-/* header {
-    line-height: 100px;
-    flex-basis: 100px;
-    background-color: #080b12;
-    text-align: right;
-}
-
-
-main {
+/* main {
     flex-grow: 1;
     background-color: #141922;
     overflow: auto;
@@ -134,10 +126,13 @@ main img {
  header {
     width: calc(100% - 50px);
     height: 100px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
+
+    line-height: 100px;
+    text-align: right;
  }
 
  main {
