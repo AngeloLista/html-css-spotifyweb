@@ -43,7 +43,11 @@ body {
     justify-content: space-between;
 }
 
-#logo-xs {
+#logo {
+    display: none;
+}
+
+.button-description {
     display: none;
 }
 
@@ -54,14 +58,36 @@ body {
     width: 32px;
 }
 
-.small-icon {
-    width: 20px;
-    position: relative;
-    left: 5px;
+#playlist {
+    display: none;
 }
 
-.profile-icon {
-    background-color: gray;
+
+.icon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.download {
+    color: #707070;
+}
+
+.icon.small {
+    width: 20px;
+    position: relative;
+    left: 3px;
+    filter: invert(43%) sepia(0%) saturate(0%) hue-rotate(238deg) brightness(99%) contrast(84%);
+}
+
+#sidebar hr {
+    margin: 10px 0;
+    background-color: #707070;
+    border: 1px solid #707070;
+    display: none;
+}
+
+.icon.profile {
+    background-color: #707070;
     border-radius: 50%;
 }
 
@@ -157,12 +183,12 @@ main h2 {
 main h4 {
     font-size: 19px;
     margin: 10px 0;
-    color: gray;
+    color: #707070;
 }
 
 main h3 {
     font-size: 15px;
-    color: gray;
+    color: #707070;
     margin-bottom: 15px;
 }
 
@@ -212,7 +238,7 @@ footer h2 {
 
 /* Icons */
 #song-fav {
-    color: gray;
+    color: #707070;
     align-self: center;
     width: 15px;
 }
@@ -277,29 +303,42 @@ footer h2 {
 
 
 @media screen and (min-width: 768px){
+
+    /* Sidebar */
     #sidebar {
         flex-basis: 150px;
+        padding: 15px;
     }
     
-    #logo-container {
-        height: 100px;
-        width: 150px;
+    #logo-xs {
+        display: none;
     }
 
     #logo {
+        margin-top: 19px;
         display: inline-block;
-        width: 60%;
+        width: 130px;
     }
 
     #sidebar ul li {
+        vertical-align: middle;
         text-align: left;
-        width: 50px;
+        width: 190px;
         margin: 0;
-        padding: 0 10px;
+        padding: 0;
+        color: white;
+    }
+
+    #sidebar ul li.download {
+        color: #707070;
+    }
+
+    .button-description {
+        display: inline-block;
     }
 
     header {
-        width: calc(100% - 150px);
+        width: calc(100% - 190px);
     }
 
     .bar.time {
@@ -308,6 +347,58 @@ footer h2 {
 
     #song-fav {
         padding-left: 10px;
+    }
+
+    #logo-container {
+        height: 100px;
+        width: 150px;
+    }
+
+    
+
+    /* Playlist */
+    #playlist {
+        margin: 30px 0;
+        color: #707070;
+        overflow: auto;
+        display: block;
+    }
+    
+    #playlist h3 {
+        color: white;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .plus-icon {
+        background-color: #707070;
+        color: black;
+        border-radius: 1px;
+        padding: 10px;
+        margin-right: 3px;
+    }
+
+    .create-playlist {
+        font-weight: 700;
+    }
+
+    .playlist-name {
+        font-weight: 700;
+        margin: 15px 0;
+    }
+
+    #sidebar hr {
+        display: block;
+    }
+
+
+    .highlighted-horizontal::before {
+        margin: auto;
+        display: block;
+        content: '';
+        height: 100%;
+        width: 3px;
+        background-color: #bdff30;
     }
 }
 
