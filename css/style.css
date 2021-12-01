@@ -217,6 +217,7 @@ footer h1 {
 }
 
 footer h2 {
+    color: #7e7e7e;
     font-size: 7px;
 }
 
@@ -402,3 +403,32 @@ footer h2 {
     }
 }
 
+
+@media screen and (min-width: 992px) {
+    .bar.time {
+        width: 390px;
+    }
+
+    .bar.volume {
+        width: 100px;
+    }
+
+    #right-f i {
+        margin-right: 15px;
+    }
+
+    #song-fav {
+        color: #707070;
+        align-self: center;
+        width: 83px;
+        padding-left: 35px;
+    }
+
+    .fa-heart {
+        margin-right: 10px;
+    }
+
+    footer h2 {
+        font-size: 10px;
+    }
+}
