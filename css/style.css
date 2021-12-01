@@ -231,6 +231,7 @@ footer h2 {
 }
 
 .song-minute {
+    line-height: 19px;
     font-size: 10px;
 }
 
@@ -246,8 +247,6 @@ footer h2 {
     background-color: #5a5a5a;
     border-radius: 15px;
     vertical-align: middle;
-    position: relative;
-    bottom: 1px;
     margin: 0 5px;
 }
 
@@ -262,6 +261,8 @@ footer h2 {
 
 .bar.volume {
     width: 70px;
+    position: relative;
+    bottom: 1px;
 }
 
 .bar.time {
