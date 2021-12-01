@@ -43,6 +43,10 @@ body {
     justify-content: space-between;
 }
 
+#logo-xs {
+    display: none;
+}
+
 #sidebar ul li {
     padding: 5px 0;
     margin: auto;
@@ -150,12 +154,21 @@ main h2 {
     margin-bottom: 10px;
 }
 
+main h4 {
+    font-size: 19px;
+    margin: 10px 0;
+    color: gray;
+}
+
 main h3 {
     font-size: 15px;
     color: gray;
     margin-bottom: 15px;
 }
 
+.artist-img {
+    border-radius: 50%;
+}
 
 
 
@@ -267,6 +280,16 @@ footer h2 {
     #sidebar {
         flex-basis: 150px;
     }
+    
+    #logo-container {
+        height: 100px;
+        width: 150px;
+    }
+
+    #logo {
+        display: inline-block;
+        width: 60%;
+    }
 
     #sidebar ul li {
         text-align: left;
@@ -282,4 +305,9 @@ footer h2 {
     .bar.time {
         width: 250px;
     }
+
+    #song-fav {
+        padding-left: 10px;
+    }
 }
+
