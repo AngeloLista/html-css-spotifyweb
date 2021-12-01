@@ -141,9 +141,10 @@ main img {
  }
 
  main {
-     height: 100%;
+     height: calc(100% - 100px);
      background-color: green;
      overflow: auto;
+     padding: 100px 15px;
  }
 
 
