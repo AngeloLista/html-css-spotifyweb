@@ -129,10 +129,15 @@ main li a {
 }
 
 /* Songs */
-main h1 {
+.section-title {
     text-align: left;
     font-size: 30px;
     margin: 30px 15px;
+}
+
+main h2 {
+    font-size: 15px;
+    color: gray;
 }
 
 .cards {
@@ -228,6 +233,10 @@ footer h2 {
 
 
 #player-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 225px;
 }
 
 .song-minute {
@@ -236,8 +245,8 @@ footer h2 {
 }
 
 /* Righr */
-#right-f *{
-    padding: 0 10px;
+#right-f i{
+    margin-right: 5px;
 }
 
 
