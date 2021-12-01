@@ -8,13 +8,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.clearfix {
-    display: table;
-    clear: both;
-    content: '';
-}
-
-
 /* Utilities */
 .flex-wrapper {
     height: 100vh;
@@ -128,18 +121,14 @@ main li a {
     font-weight: 700;
 }
 
-/* Songs */
+/* Section */
 .section-title {
     text-align: left;
     font-size: 30px;
     margin: 30px 15px;
 }
 
-main h2 {
-    font-size: 15px;
-    color: gray;
-}
-
+/* Cards */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -170,14 +159,6 @@ main h3 {
 
 
 
-
-
-
-
-
-
-
-
 /* Footer */
 footer {
     z-index: 1;
@@ -190,6 +171,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer h1 {
+    font-size: 13px;
+}
+
+footer h2 {
+    font-size: 7px;
 }
 
 
@@ -208,22 +197,15 @@ footer {
     padding: 0 10px;
 }
 
+/* Icons */
 #song-fav {
     color: gray;
     align-self: center;
     width: 15px;
 }
 
-footer h1 {
-    font-size: 13px;
-}
-
-footer h2 {
-    font-size: 7px;
-}
 
 /* Center */
-/* Player */
 #center-f {
     display: flex;
     flex-direction: column;
@@ -231,7 +213,7 @@ footer h2 {
     justify-content: space-between;
 }
 
-
+/* Media player controls */
 #player-controls {
     display: flex;
     justify-content: space-around;
@@ -239,17 +221,18 @@ footer h2 {
     width: 225px;
 }
 
+/* Song time stamp */
 .song-minute {
     line-height: 19px;
     font-size: 10px;
 }
 
-/* Righr */
+/* Right */
 #right-f i{
     margin-right: 5px;
 }
 
-
+/* Bar */
 .bar {
     display: inline-block;
     height: 5px;
@@ -258,7 +241,7 @@ footer h2 {
     vertical-align: middle;
     margin: 0 5px;
 }
-
+/* Bar Content */
 .bar.plain::after {
     display: block;
     content: '';
@@ -267,7 +250,6 @@ footer h2 {
     background-color: white;
     border-radius: 30px;
 }
-
 .bar.volume {
     width: 70px;
     position: relative;
