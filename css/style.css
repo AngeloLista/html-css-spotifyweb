@@ -417,14 +417,18 @@ footer h2 {
         display: block;
     }
 
-
-    .highlighted-horizontal::before {
-        margin: auto;
+    li.highlighted-horizontal {
+        position: relative;
+    }
+    .highlighted-horizontal::after {
         display: block;
         content: '';
-        height: 100%;
-        width: 3px;
-        background-color: #bdff30;
+        height: 30px;
+        width: 5px;
+        background-color: #b8ff32;
+        position: absolute;
+        bottom: 0;
+        left: -15px;
     }
 }
 
