@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous'/>
 
 
     <title>Spotify</title>
@@ -148,17 +149,47 @@
 
         <!-- Control Bar -->
         <footer>
-            <!-- <div class="left-f">
-                <img class="song cover" src="img/sinister.jpeg" alt="">
-                <h1>Sinister</h1>
-                <h2>Brano Nome</h2>
-            </div>
-            <div class="center-f">
+            <div class="left-f">
+                <!-- Cover -->
+                <img id="song-cover" src="img/sinister.jpeg" alt="">
 
+                <!-- Title and Author -->
+                <div id="song-title-author">
+                    <h1>Sinister</h1>
+                    <h2>Brano Nome</h2>
+                </div>
+
+                <!-- Fav and Save -->
+                <div id="song-fav">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+                
+            </div>
+            <div id="center-f">
+                <!-- Song Player Controls -->
+                <div id="player-controls">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="fas fa-play-circle fa-2x"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+
+                <!-- Time -->
+                <div id="time-bar">
+                    <span class="song-minute">0:33</span>
+                    <span class="bar time plain"></span>
+                    <span class="song-minute">3:33</span>
+                </div>
             </div>
             <div class="right-f">
-
-            </div> -->
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <span class="bar volume plain"></span>
+                
+            </div>
         </footer>
     </div>
     

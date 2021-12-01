@@ -117,11 +117,12 @@ main nav ul li {
     height: 3px;
     width: 30%;
     background-color: #bdff30;
-    margin-top: 0px;
+    margin-top: -3px;
     border-radius: 30px;
 }
 
 main li a {
+    line-height: 33px;
     text-decoration: none;
     color: #808287;
     font-weight: 700;
@@ -178,4 +179,91 @@ footer {
     flex-shrink: 0;
     flex-basis: 100px;
     background-color: #282828;
+    color: white;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Left cover */
+.left-f {
+    display: flex;
+    justify-content: space-between;
+}
+
+#song-cover {
+    max-width: 50px;
+}
+
+#song-title-author {
+    align-self: center;
+    padding: 0 10px;
+}
+
+#song-fav {
+    color: gray;
+    align-self: center;
+    width: 15px;
+}
+
+footer h1 {
+    font-size: 13px;
+}
+
+footer h2 {
+    font-size: 7px;
+}
+
+/* Center */
+/* Player */
+#center-f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#player-controls {
+}
+
+.song-minute {
+    font-size: 10px;
+}
+
+/* Righr */
+#right-f *{
+    padding: 0 10px;
+}
+
+
+.bar {
+    display: inline-block;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 15px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin: 0 5px;
+}
+
+.bar.plain::after {
+    display: block;
+    content: '';
+    height: 5px;
+    width: 30%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.bar.volume {
+    width: 70px;
+}
+
+.bar.time {
+    width: 150px;
 }
