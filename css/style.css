@@ -205,6 +205,31 @@ main li a {
 main img {
     max-width: 100%;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+main img::before {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
+
+main img:hover {
+    transform: translateY(-15px);
+    animation: song-translate;
+    animation-duration: 0.3s;
+    filter: opacity(0.5);
+}
+
+@keyframes song-translate {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
 }
 
 main h2 {
