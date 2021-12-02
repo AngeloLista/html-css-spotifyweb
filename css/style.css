@@ -145,6 +145,7 @@ body {
 }
 /* Header */
 header {
+    z-index: 1;
     width: calc(100% - 50px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -224,17 +225,22 @@ main li a {
     position: relative;
 }
 
-
-
-
 main img {
     max-width: 100%;
     margin-bottom: 15px;
     cursor: pointer;
 }
 
+main img::before {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
+
 main img:hover {
-    filter: opacity(50%);
+    filter: opacity(0.5);
     transition: 0.3s;
     transform: translateY(-15px);
 }
