@@ -169,6 +169,10 @@ nav ul li {
     margin: 10px 10px;
 }
 
+nav ul li a:hover {
+    color: white;
+}
+
 .active::after {
     margin: auto;
     display: block;
@@ -396,6 +400,20 @@ footer h3 {
         margin: 0;
         padding: 0;
         color: #707070;
+    }
+
+    
+    
+    #sidebar ul li:hover {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(206deg) brightness(175%) contrast(101%);
+    }
+
+    #sidebar ul li.active-horizontal:hover {
+        filter: none;
+    }
+
+    #bot-sidebar ul li:last-child:hover {
+        filter: none;
     }
 
     #sidebar #top-sidebar ul li {
