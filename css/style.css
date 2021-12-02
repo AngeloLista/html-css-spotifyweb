@@ -48,8 +48,15 @@ body {
     justify-content: space-between;
 }
 
+#logo-container {
+    width: 32px;
+    margin: 10px auto 5px auto;
+    padding: 5px 0;
+}
+
 #logo {
     display: none;
+    width: 130px;
 }
 
 .button-description {
@@ -347,9 +354,7 @@ footer h3 {
     }
 
     #logo {
-        margin-top: 19px;
         display: inline-block;
-        width: 130px;
     }
 
     #sidebar ul li {
@@ -392,7 +397,7 @@ footer h3 {
     }
 
     #logo-container {
-        height: 100px;
+        height: 75px;
         width: 150px;
     }
 
