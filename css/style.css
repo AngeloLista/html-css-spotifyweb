@@ -191,7 +191,7 @@ main li a {
 }
 
 .card {
-    width: 195px;
+    flex-basis: calc(50% - 30px);
     margin: 0 15px;
 }
 
@@ -450,6 +450,11 @@ footer h3 {
 
 
 @media screen and (min-width: 992px) {
+    
+    .card {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+
     .bar.time {
         width: 390px;
     }
@@ -478,6 +483,12 @@ footer h3 {
     }
 }
 
+@media screen and (min-width: 1199px) {
+    .card {
+        flex-basis: calc(100% / 6 - 30px);
+    }
+}
+
 @media screen and (max-height: 830px) {
     #playlist {
         height: 190px;
@@ -487,5 +498,12 @@ footer h3 {
 @media screen and (max-height: 635px) {
     #playlist {
         height: 150px;
+    }
+}
+
+
+@media screen and (max-height: 619px) {
+    #playlist {
+        display: none;
     }
 }
