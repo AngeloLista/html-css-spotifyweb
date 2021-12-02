@@ -225,14 +225,14 @@ main li a {
 }
 
 
-.card:hover .card.play-hover {
+.card:hover .play-hover::before {
     display: block;
 }
 .card.play-hover::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 30px;
-    display: block;
+    display: none;
     content: '\f144';
     filter: invert(50%) sepia(86%) saturate(320%) hue-rotate(39deg) brightness(103%) contrast(106%);
     width: 15px;
