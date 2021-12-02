@@ -124,6 +124,19 @@ body {
     border-radius: 50%;
 }
 
+/* hovers */
+#top-sidebar ul li:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(206deg) brightness(175%) contrast(101%);
+}
+
+#sidebar ul li.active-horizontal:hover {
+    filter: none;
+}
+
+#bot-sidebar ul li:first-child:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(206deg) brightness(175%) contrast(101%);
+}
+
 
  
 #content {
@@ -302,13 +315,29 @@ footer h3 {
     justify-content: space-between;
 }
 
+.left-f *{
+    cursor: pointer;
+}
+
 #song-cover {
     max-width: 50px;
+}
+
+#song-cover:hover {
+    filter: opacity(0.5);
 }
 
 #song-title-author {
     align-self: center;
     padding: 0 10px;
+}
+
+.fa-heart:hover {
+    color: white;
+}
+
+.fa-folder:hover {
+    color: white;
 }
 
 /* Icons */
@@ -336,6 +365,12 @@ footer h3 {
     margin-bottom: 5px;
 }
 
+#player-controls *{
+    cursor: pointer;
+}
+
+
+
 /* Song time stamp */
 .song-minute {
     line-height: 19px;
@@ -345,6 +380,7 @@ footer h3 {
 /* Right */
 #right-f i{
     margin-right: 5px;
+    cursor: pointer;
 }
 
 /* Bar */
@@ -355,6 +391,7 @@ footer h3 {
     border-radius: 15px;
     vertical-align: middle;
     margin: 0 5px;
+    cursor: pointer;
 }
 /* Bar Content */
 .bar.plain::after {
@@ -400,20 +437,6 @@ footer h3 {
         margin: 0;
         padding: 0;
         color: #707070;
-    }
-
-    
-    
-    #top-sidebar ul li:hover {
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(206deg) brightness(175%) contrast(101%);
-    }
-
-    #sidebar ul li.active-horizontal:hover {
-        filter: none;
-    }
-
-    #bot-sidebar ul li:first-child:hover {
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(206deg) brightness(175%) contrast(101%);
     }
 
     #sidebar #top-sidebar ul li {
@@ -474,12 +497,18 @@ footer h3 {
     }
 
     .create-playlist {
+        cursor: pointer;
         font-weight: 700;
+    }
+
+    .create-playlist:hover {
+        color: white;
     }
 
     .playlist-name {
         font-weight: 700;
         margin: 15px 0;
+        cursor: pointer;
     }
 
     #sidebar hr {
