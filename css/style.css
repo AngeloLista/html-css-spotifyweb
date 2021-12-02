@@ -225,23 +225,7 @@ main li a {
 }
 
 
-.card:hover .play-hover::before {
-    display: block;
-}
-.card.play-hover::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 30px;
-    display: none;
-    content: '\f144';
-    filter: invert(50%) sepia(86%) saturate(320%) hue-rotate(39deg) brightness(103%) contrast(106%);
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 main img {
     max-width: 100%;
@@ -249,16 +233,8 @@ main img {
     cursor: pointer;
 }
 
-main img::before {
-    display: block;
-    content: '';
-    width: 30px;
-    height: 30px;
-    background-color: green;
-}
-
 main img:hover {
-    filter: opacity(0.5);
+    filter: opacity(50%);
     transition: 0.3s;
     transform: translateY(-15px);
 }
