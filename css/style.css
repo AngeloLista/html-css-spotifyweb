@@ -238,19 +238,9 @@ main img::before {
 }
 
 main img:hover {
-    transform: translateY(-15px);
-    animation: song-translate;
-    animation-duration: 0.3s;
     filter: opacity(0.5);
-}
-
-@keyframes song-translate {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-15px);
-    }
+    transition: 0.3s;
+    transform: translateY(-15px);
 }
 
 main h2 {
@@ -364,6 +354,11 @@ footer h3 {
 
 #player-controls *{
     cursor: pointer;
+}
+
+#player-controls *:hover{
+    transition: 0.1s;
+    transform: scale(1.05);
 }
 
 
