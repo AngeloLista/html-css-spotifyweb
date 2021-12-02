@@ -80,6 +80,7 @@ body {
     height: 350px;
     display: none;
     overflow: auto;
+    color: #707070;
 }
 
 
@@ -227,8 +228,11 @@ main img:hover {
     0% {
         transform: translateY(0);
     }
-    100% {
+    90% {
         transform: translateY(-15px);
+    }
+    100% {
+        transform: translatey(0px);
     }
 }
 
@@ -431,8 +435,6 @@ footer h3 {
     /* Playlist */
     #playlist {
         margin: 30px 0;
-        color: #707070;
-        overflow: auto;
         display: block;
     }
     
