@@ -21,14 +21,22 @@ body {
 }
 
 .btn {
+    line-height: 30px;
     color: white;
     text-decoration: none;
     border: 1px solid white;
     border-radius: 30px;
-    padding: 15px 50px;
+    padding: 10px 35px;
     font-size: 15px;
-    margin-right: 30px;
+    margin-right: 50px;
+    display: inline-block;
 }
+
+.btn:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
 
 
 /* WebApp */
@@ -133,11 +141,6 @@ header {
 
     line-height: 100px;
     text-align: right;
-}
-
-header .btn:hover {
-    transition: 1s;
-    transform: scale(1.3);
 }
 
 
