@@ -248,11 +248,8 @@ main img:hover {
     0% {
         transform: translateY(0);
     }
-    90% {
-        transform: translateY(-15px);
-    }
     100% {
-        transform: translatey(0px);
+        transform: translateY(-15px);
     }
 }
 
