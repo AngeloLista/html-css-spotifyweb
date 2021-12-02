@@ -165,7 +165,7 @@ nav ul li {
     margin: 10px 10px;
 }
 
-.highlighted::after {
+.active::after {
     margin: auto;
     display: block;
     content: '';
@@ -438,10 +438,11 @@ footer h3 {
         display: block;
     }
 
-    li.highlighted-horizontal {
+    li.active-horizontal {
         position: relative;
     }
-    .highlighted-horizontal::after {
+
+    .active-horizontal::after {
         display: block;
         content: '';
         height: 30px;
