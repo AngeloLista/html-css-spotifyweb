@@ -404,7 +404,7 @@ footer h3 {
 
     
     
-    #sidebar ul li:hover {
+    #top-sidebar ul li:hover {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(206deg) brightness(175%) contrast(101%);
     }
 
@@ -412,8 +412,8 @@ footer h3 {
         filter: none;
     }
 
-    #bot-sidebar ul li:last-child:hover {
-        filter: none;
+    #bot-sidebar ul li:first-child:hover {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(206deg) brightness(175%) contrast(101%);
     }
 
     #sidebar #top-sidebar ul li {
