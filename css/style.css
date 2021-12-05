@@ -297,6 +297,13 @@ footer h3 {
     font-size: 7px;
 }
 
+footer h2:hover {
+    text-decoration: underline;
+}
+
+footer h3:hover {
+    text-decoration: underline;
+}
 
 /* Left cover */
 .left-f {
