@@ -33,8 +33,8 @@ body {
 }
 
 .btn:hover {
-    transition: 1s;
-    transform: scale(1.1);
+    transition: 0.3s;
+    transform: scale(1.07);
 }
 
 
@@ -607,7 +607,7 @@ footer h3:hover {
     }
 
     .create-playlist:hover {
-        color: white;
+        color: white;        
     }
 
     .playlist-name {
