@@ -328,6 +328,11 @@ footer h3:hover {
     padding: 0 10px;
 }
 
+#song-title-author a {
+    color: white;
+    text-decoration: none;
+}
+
 .fa-heart:hover {
     color: white;
 }
@@ -361,12 +366,8 @@ footer h3:hover {
     margin-bottom: 5px;
 }
 
-#player-controls *{
-    cursor: pointer;
-}
 
 #player-controls *:hover{
-    transition: 0.1s;
     transform: scale(1.05);
 }
 
@@ -413,7 +414,7 @@ footer h3:hover {
 
 
 /* Bar selector */
-.bar.circle::after {
+.bar.circle-selector::after {
     display: none;
     content: '';
     height: 10px;
@@ -426,7 +427,7 @@ footer h3:hover {
     transform: translate(-50%, 50%);
 }
 
-.bar.circle:hover::after {
+.bar.circle-selector:hover::after {
     display: block;
 }
 
