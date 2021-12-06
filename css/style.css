@@ -238,6 +238,10 @@ main img:hover {
     filter: opacity(0.5);
 }
 
+main .artist-img:hover {
+    filter: drop-shadow(10px 15px 50px rgba(0, 0, 0, 0.3));
+}
+
 /* Playlist Card Hover */
 main .for-you-card:hover {
     transition: 0.3s;
@@ -256,7 +260,7 @@ main .for-you-card:hover {
     font-size: 30px;
     display: none;
     content: '\f144';
-    color: white;
+    color: rgb(99, 72, 72);
     filter: drop-shadow(0px 3px 6px black);
     position: absolute;
     top: 50%;
