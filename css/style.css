@@ -234,6 +234,7 @@ main a {
 }
 
 main img:hover {
+    transition: 0.3s;
     filter: opacity(0.5);
 }
 
