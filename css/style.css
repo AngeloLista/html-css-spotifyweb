@@ -229,6 +229,60 @@ main a {
     position: relative;
 }
 
+.card figure {
+    position: relative;
+}
+
+main img:hover {
+    filter: opacity(0.5);
+}
+
+/* Playlist Card Hover */
+main .for-you-card:hover {
+    transition: 0.3s;
+    transform: translateY(-15px);
+}
+
+/* Recently Added Hover */
+.play-icon:hover::after {
+    display: block;
+    pointer-events: none;
+}
+
+.play-icon::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    display: none;
+    content: '\f144';
+    color: white;
+    filter: drop-shadow(0px 3px 6px black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+/* Artist Card Hover */
+.artist-card:hover::after {
+    display: block;
+    pointer-events: none;
+}
+
+.artist-card::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 35px;
+    display: none;
+    content: '\f144';
+    color: #9bd02d;
+    filter: drop-shadow(0px 3px 6px black);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-10%, -75%);
+}
+
 /* Card info */
 
 .card-title {
@@ -263,11 +317,6 @@ main img::before {
     background-color: green;
 }
 
-main img:hover {
-    filter: opacity(0.5);
-    transition: 0.3s;
-    transform: translateY(-15px);
-}
 
 main h2 {
     font-size: 32px;
