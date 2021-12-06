@@ -213,6 +213,10 @@ main li a {
 }
 
 /* Cards */
+
+main a {
+    text-decoration: none;
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -223,6 +227,26 @@ main li a {
     flex-basis: calc(50% - 30px);
     margin: 0 15px;
     position: relative;
+}
+
+/* Card info */
+
+.card-title {
+    text-decoration: none;
+    color: white;
+}
+
+.card-title:hover {
+    text-decoration: underline;
+}
+
+.card-author {
+    text-decoration: none;
+    color: #707070;
+}
+
+.card-author:hover {
+    text-decoration: underline;
 }
 
 main img {
