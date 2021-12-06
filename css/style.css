@@ -396,13 +396,13 @@ footer h3:hover {
     position: relative;
 }
 
-.bar.plain:hover::before {
+/* Fill  */
+
+.bar.fill:hover::before {
     background-color: #bdff30;
 }
 
-
-/* Bar Content */
-.bar.plain::before {
+.bar.fill::before {
     display: block;
     content: '';
     height: 5px;
@@ -411,6 +411,8 @@ footer h3:hover {
     border-radius: 30px;
 }
 
+
+/* Bar selector */
 .bar.circle::after {
     display: none;
     content: '';
